@@ -1,0 +1,31 @@
+set scrolloff=7
+set mouse=a
+set surround
+set easymotion
+set visualbell
+set noerrorbells
+set clipboard=unnamedplus
+set NERDTree
+set relativenumber number
+set commentary
+
+inoremap jk <esc>
+inoremap <C-e> <End>
+
+let mapleader = " "
+
+nmap gr <Action>(FindUsages)
+nmap <leader>e :NERDTreeToggle<CR>
+nmap <leader>f <Action>(GotoFile)
+nmap <S-h> <Action>(PreviousTab)
+nmap <S-l> <Action>(NextTab)
+nmap <leader>s <Action>(SaveAll)
+map <leader>rn <Action>(RenameElement)
+nmap <leader>c <Action>(CloseContent)
+nmap <leader>i <Action>(Generate)
+nmap <leader>F <Action>(ReformatCode)
+nmap <leader>br <Action>(ToggleLineBreakpoint)
+nmap gl <Action>(ShowErrorDescription)
+
+
+set clipboard+=ideaput
